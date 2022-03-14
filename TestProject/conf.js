@@ -9,12 +9,11 @@ exports.config = {
   ],
   
   // multiple browsers
-  capabilities: {
-    'browserName': 'chrome',
-    'chromeOptions': {
-      'args': ['show-fps-counter=true']
-    }
-  },
+  multiCapabilities: [{
+    'browserName': 'firefox'
+  }, {
+    'browserName': 'chrome'
+  }]
   
 
 }
